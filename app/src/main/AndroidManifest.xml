@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".otpV2.OTPV2Activity"/>
+        <activity android:name=".ui.otpV2.OTPV2Activity"/>
 
         <service android:name=".service.TimerService"
             android:exported="false"/>

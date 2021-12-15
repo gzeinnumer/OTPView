@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.gzeinnumer.otpview.databinding.ActivityMainBinding;
-import com.gzeinnumer.otpview.otpV2.OTPV2Activity;
+import com.gzeinnumer.otpview.ui.otpV2.OTPV2Activity;
 
 public class MainActivity extends AppCompatActivity {
 

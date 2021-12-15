@@ -1,4 +1,4 @@
-package com.gzeinnumer.otpview.otpV2;
+package com.gzeinnumer.otpview.ui.otpV2;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
