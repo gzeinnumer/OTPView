@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/MyAppbarLayout"
+            android:background="@color/white">
+
+            <com.google.android.material.appbar.MaterialToolbar style="@style/MyMaterialToolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_toolbar"
+                        style="@style/MyCostumToolbarTitle"
+                        android:text="Lupa Password" />
+                </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View style="@style/MyDivider.Toolbar.16" />
+
+        <LinearLayout
+            style="@style/MyParentType.List"
+            android:layout_margin="@dimen/def_margin">
+
+            <TextView
+                style="@style/MyTextHeader"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/def_margin_big"
+                android:text="Masukkan Kode OTP" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space"
+                android:layout_marginBottom="@dimen/space"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_1_p"
+                    style="@style/MyTextInputLayoutOutlinedBox"
+                    android:layout_width="50dp"
+                    android:layout_marginStart="@dimen/space_half"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="@dimen/space_half"
+                    android:layout_marginBottom="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_1"
+                        style="@style/MyTextInputEditText"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        tools:text="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_2_p"
+                    style="@style/MyTextInputLayoutOutlinedBox"
+                    android:layout_width="50dp"
+                    android:layout_marginStart="@dimen/space_half"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="@dimen/space_half"
+                    android:layout_marginBottom="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_2"
+                        style="@style/MyTextInputEditText"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        tools:text="2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_3_p"
+                    style="@style/MyTextInputLayoutOutlinedBox"
+                    android:layout_width="50dp"
+                    android:layout_marginStart="@dimen/space_half"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="@dimen/space_half"
+                    android:layout_marginBottom="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_3"
+                        style="@style/MyTextInputEditText"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        tools:text="3" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ed_4_p"
+                    style="@style/MyTextInputLayoutOutlinedBox"
+                    android:layout_width="50dp"
+                    android:layout_marginStart="@dimen/space_half"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="@dimen/space_half"
+                    android:layout_marginBottom="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_4"
+                        style="@style/MyTextInputEditText"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        tools:text="4" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error"
+                style="@style/MyTextHeader"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_half"
+                android:text="Kode OTP Salah"
+                android:textColor="@color/red_500"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/tv_counter"
+                style="@style/MyButtonText"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_half"
+                android:text="Kirim Ulang (60)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/h5.1" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/MyButtonContained"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space_half"
+                android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
