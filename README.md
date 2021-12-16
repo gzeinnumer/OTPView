@@ -1,6 +1,6 @@
 # OTPView
 
-<img src="https://github.com/gzeinnumer/MyBaseCode/blob/master/preview/example4.gif" width="200"/>
+<img src="https://github.com/gzeinnumer/OTPView/blob/master/preview/preview1.jpg" width="300"/>
 
 - [AndroidManifest.xml](https://github.com/gzeinnumer/OTPView/blob/master/app/src/main/AndroidManifest.xml)
 - app
